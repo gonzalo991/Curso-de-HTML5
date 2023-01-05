@@ -1,12 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Curso de HTML5 Capitulo 2 - Gonzalo Araya</title>
 </head>
+
 <body>
-    
+    <!-- 
+                    ETIQUETAS ESENCIALES DE UNA WEB
+
+    -->
+
+    <header>
+        <!-- header: Ésta etiqueta no se debe confundir con el elemnto head que usamos anteriormente
+        para construir la cabecera del documento.
+            Su intención es proveer información introductoria como títulos, subtítulos, logos, etc.
+            Difiere con respecto a head por su alcance. Mientras que head tiene el propósito de proveer
+            información acerca de todo el documento, header es usado solo para el cuerpo
+            o secciones específicas dentro del cuerpo de nuestra web. Ésta etiqueta representa
+            el inicio de la parte visible de nuestro documento. -->
+
+        <h1>Este es el título principal del sitio web</h1> <!-- Ésta etiqueta se utiliza para definir títulos, su número indica la importancia del mismo
+        siendo 1 el más importante y 6 el menos importante. Utilizaremos h1 para el título y h2 a h6 para subtitulos o subtitulos internos. Por convención solo puede haber una etiqueta h1 en cada
+        elemento html-->
+
+    </header>
+
+    <nav>
+        <!-- nav: Se ubicará después de la etiqueta de cierre de la cabecera y no dentro de la misma
+            (osea que no se ubicará dentro de la etiqueta header), ésto es porque nav no es parte de
+            la cabecera sino una nueva sección.
+                
+                Si es posible ubicar la etiqueta nav dentro de la cabecera o de cualquier otra parte
+                del cuerpo debido a la versatilidad de HTML, sin embargo ésto dependerá de nosotros.
+                Aún así debemos considerar que estas etiquetas fueron creadas para brindar información
+                a los navegadores y ayudar a cada nuevo programa y dispositivo en el mercado a identificar
+                las partes más relevantes del documento. Es una buena práctica utilizar el elemento nav
+                específicamente para la navegación en menúes principales o grandes bloques de enlaces
+                así podremos mantener nuestro código portable y comprensible.
+        -->
+
+        <ul>
+            <li>Principal</li>
+            <li>Fotos</li>
+            <li>Videos</li>
+            <li>Contacto</li>
+        </ul>
+
+    </nav>
+
+    <!--
+        Dentro de la etiqueta nav, observamos el uso de la etiqueta <ul> que significa "unordered list"
+        y se utiliza para crear listas desordenadas, dentro de la misma se utilizan las etiquetas <li> 
+        que significan "list item" para definir los distintos items de la lista que formará nuestra barra 
+        de navegación.
+     -->
+
+
+    <section>
+
+        <!--
+            section: Contiene el contenido principal de la pàgina a lo que hemos llamado anteriormente la
+            secciòn de informaciòn principal y siguiendo el modelo estandar va ubicada
+            debajo de la etiqueta de cierre </nav>.
+        -->
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam libero ut ipsa eos amet eius accusamus aut
+            vero natus optio cumque neque, ducimus reprehenderit nemo facilis nihil fuga eveniet a?
+            Est nesciunt doloribus obcaecati! Quibusdam, itaque neque sit obcaecati quo explicabo magni reiciendis
+            cumque. Minima neque, impedit, asperiores amet nulla, sint iure qui vitae distinctio facilis fugiat. Eius,
+            quam cum?
+            Optio quaerat debitis laudantium, qui consequatur amet sunt enim porro modi iure neque, itaque ipsum
+            aperiam! Neque id enim sunt tempora consequuntur officia dolor cumque provident, repudiandae molestias quam
+            cum.
+        </p>
+
+    </section>
+
+    <aside>
+        <!--
+            En un tìpico diseño web la columna llamada barra lateral se ubica al lado de la columna
+            de informacion principal. Es una secciòn que normalmente contiene datos relacionados con la 
+            informaciòn principal pero que no son relevantes o igual de importantes.
+
+            El elemento aside podrìa estar ubicado del lado derecho o izquierdo de nuestra
+            pàgina, no tiene una posiciòn predefinida. Solamente describe la informaciòn que contiene
+            y no el lugar en el que se ubica, puede ser ubicado en cualquier parte del diseño y ser usado
+            siempre y cuando su contenido no sea considerado como el contenido principal del documento. Podemos usarlo
+            dentro del elemento section o incluso entre la informacion relevante como en el caso de una cita.
+        -->
+        <blockquote> Mensaje nùmero uno</blockquote> <!-- Estiqueta para marcar citas-->
+        <blockquote>Mensaje nùmero dos</blockquote>
+    </aside>
+
+    <footer>
+        <!--
+            footer: En el tìpico diseño de una pàgina web la secciòn del pie de pàgina, footer o institucional
+            serà definida por etiquetas <footer>, debido a que la barra representa el final del documento
+            y normalmente es usada para compartir informaciòn general sobre el autor o la organizaciòn detràs del proyecto.
+            
+            Representa el final del cuerpo de nuestro documento y tendrà el propòsito descripto anteriormente. Sin embargo puede
+            ser usado multiples veces dentro del cuerpo para representar tambièn el final de diferentes secciones del mismo modo
+            que la etiqueta header.
+        -->
+        <p>
+            Derechos Reservados &copy; 2022-2023
+        </p>
+    </footer>
 </body>
+
 </html>
