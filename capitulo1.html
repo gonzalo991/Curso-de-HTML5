@@ -1,0 +1,85 @@
+<!DOCTYPE html> <!-- Doctype declara el tipo de documento que estamos creando-->
+<html lang="es"> <!-- Es la etiqueta que envolverá todo el contenido del documento
+en el mismo se especifica el atributo lang que especifica el lenguaje que se utilizará
+en éste caso es el español -->
+
+<head> <!-- Cabecera: Aquí definiremos el título de nuestra web, el set de caracteres correspondientes
+información general del documento, archivos externos con estilos de css, código de javascript
+o imagenes para generar la web-->
+
+    <meta charset="iso-8859-1" /> <!-- Ésta etiqueta define como se mostrará el texto en pantalla, se puede agregar más de una etiqueta meta
+    para definir otros aspectos de nuestra web como decription o keywords.
+    
+    ESTA INFORMACIÓN NO ES MOSTRADA EN EL NAVEGADOR PERO ES IMPORTANTE PARA
+    MOTORES DE BUSQUEDA O DISPOSITIVOS QUE NECESITAN HACER UNA VISTA PREVIA DEL
+    DOCUMENTO U OBTENER UN SUMARIO DE LA INFORMACIÓN QUE CONTIENE.
+
+    El atributo name declara el tipo de documento y content su valor
+
+    Ya que es una etiqueta simple no es necesario cerrarla con una barra al final,
+    pero es recomendable usarla por motivos de compatibilidad con los distintos navegadores. -->
+
+    <meta name="description" content="ejemplo de HTML5" />
+
+    <meta name="keywords" content="HTML5, CSS3, Javascript" />
+
+    <title>Estudiando HTML</title> <!-- Ésta etiqueta especifica el título del documento
+    y normalmente es mostrado en la barra superior de la ventana del navegador -->
+
+    <link rel="stylesheet" href="misestilos.css" /> <!-- Es una de las etiquetas más importantes ya que su función es incorporar estilos, código javascript,
+    imagenes, iconos desde archivos externos. 
+    
+    El atributo rel significa relación y es acerca de la relación entre el documento y el archivo que estamos incorporando
+    por medio de href. En éste caso el atributo rel tiene el valor stylesheet que le dice al navegador que el archivo misestilos.css
+    es un archivo CSS con estilos requeridos para presentar la página en pantalla.
+
+        CONCEPTO BÁSICO: Un archivo de estilos es un grupo de reglas de formato que ayudarán a cambiar la apariencia de
+        nuestra página web. Sin éstas reglas, el texto y cualquier otro elemento HTML sería mostrado en pantalla utiliando
+        los estilos estándar provistos por el navegador.      
+        
+        NO ES ESTRICTAMENTE NECESARIO OBTENER ESTA INFORMACIÓN DE ARCHIVOS EXTERNOS PERO ES UNA PRÁCTICA RECOMENDADA. CARGAR
+        LAS REGLAS CSS DESDE UN DOCUMENTO EXTERNO NOS PERMITIRÁ ORGANIZAR EL DOCUMENTO PRINCIPAL, INCREMENTAR LA
+        VELOCIDAD DE CARGA Y APROVECHAR LAS CARACTERÍSTICAS DE HTML5. -->
+
+</head>
+
+<body> <!-- Es la principal de la organización del documento HTML, y representa la parte visible del mismo -->
+
+    <!-- HTML es un lenguaje de etiquetas, un listado de elementos que usualmente se utilizan en pares,
+    es decir que cada etiqueta tiene una apertura y un cierra, y que pueden ser anidados. -->
+
+    <!-- 
+        
+                            ORGANIZACIÓN DE UNA PÁGINA WEB
+    
+        Normalmente una página o aplicación web está dividida en varias áreas visuales para mejorar la experiencia del usuario
+        y facilitar la interactividad. Las palabras clave que representan cada elemento de HTML están intimamente relacionadas con 
+        éstas areas. 
+
+        1.- CABECERA: Se encuentra en la parte superior, es el espacio donde usualmente se ubica
+        el logo, título, subtítulos y una corta descripción del sitio web o la página.
+
+        2.- BARRA DE NAVEGACIÓN: Se encuentra inmediatamente debajo de la cabecera y ofrece un menú 
+        o lista de enlaces con el propósito de facilitar la navegación a través del sitio.
+
+        3.- INFORMACIÓN PRINCIPAL: En ésta sección se encuentra el contenido más relevante del sitio,
+        podría contener una lista de artículos, descripción de productos o cualquier otra cosa importante.
+
+        4.- BARRA LATERAL: Podría mostrar una lista de enlaces apuntando hacia cada uno de los items mostrados
+        en la sección de información general.
+
+        5.- PIE DE PÁGINA O INSTITUCIONAL: Es el área en donde normalmente se muestra información acerca del sitio web,
+        el autor o la empresa, además de algunos enlaces con respecto a reglas, términos y condiciones y toda información
+        adicional que el desarrollador considere importante compartir. Es un complemento de la cabecera
+        y es parte de lo que se considera la estructura esencial de una página web.
+    
+        1.- <header> </header>
+        2.- <nav> </nav>
+        3.- <section> </section>
+        4.- <aside> </aside>
+        5.- <footer> </footer>
+        
+    -->
+</body>
+
+</html>
